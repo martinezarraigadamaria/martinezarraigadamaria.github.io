@@ -13,6 +13,17 @@
     height: 100vh; 
 }
 
+/* Revisar estilos para barra de navegacion */
+a:link{
+    text-decoration: none;
+}
+a:hover {
+    font-size: 150%;
+}
+a:visited {
+    text-decoration: none;
+  }
+
 .block0{
     grid-area: block0;
 }

@@ -12,6 +12,18 @@
     height: 300vh; 
 }
 
+/* Revisar estilos para barra de navegacion */
+
+
+a:link{
+    text-decoration: none;
+}
+a:hover {
+    font-size: 150%;
+}
+a:visited {
+    text-decoration: none;
+  }
 /*
 .block0{
     grid-column: 1 / span 1;
@@ -93,3 +105,10 @@
                              "footer";                    
     }
 }
+
+
+.block1{
+    color: pink;
+}
+
+barra-navegacion{background-color: forestgreen;}
