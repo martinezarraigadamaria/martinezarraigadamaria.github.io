@@ -15,20 +15,39 @@
     <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
 </head>
 
+<style>
+ul {
+    list-style-type: none;
+    margin-right: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 10px; 
+    background-color: black;
+    color: white;
+}
+</style>
+
 <body>
 
 <section class="grid-container">
-
+    
     <!-- Logo y barra de navegación -->
     <div class="item block0"> Logo </div>
     <div class="item block1">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#ancla-1">Nuestros Viajes</a>
-            <a href="sobrenosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contactanos</a>
-            <a href="tips.html">Tips del Viajero</a>
-        </nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#ancla-1">Nuestros Viajes</a></li>
+        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
+        <li><a href="tips.html">Tips del Viajero</a></li>
+        </ul>
     </div>
 
     <!-- Texto -->
@@ -40,8 +59,7 @@
         Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
         ut expedita omnis distinctio quia nihil dolore beatae fuga sit doloremque aliquid.
         </p>
-    </div>
-
+        </div>
     </div>
 
     <!-- Imagen -->
@@ -57,18 +75,20 @@
     <!-- Footer -->
     <div class="item footer"> 
     
-    <div>
-    <nav>
-        <a href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>        
-    </nav>
-
-    <p> ¡Seguinos en nuestras redes! </p>
-    </div>
+        <div>
+        <br>
+        <!-- Revisar, problemas al centrar el texto -->
+        <a style="padding-right: 40px; padding-left: 40px;" href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
+        <a style="padding-right: 40px;" href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
+        <a style="padding-right: 40px;"  href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>
+        <a style="padding-right: 40px;"  href="https://www.tiktok.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-tiktok"></i></a>
     
+        <p>  <br> ¡Seguimos en las redes! </p>
+        </div>
     </div>
+
 </section>
+
 </body>
 
 </html>

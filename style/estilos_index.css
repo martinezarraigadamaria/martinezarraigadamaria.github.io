@@ -1,8 +1,8 @@
 .grid-container{
     display: grid;
     /*font-size: 30px*/
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr 4fr 3fr 1fr;    
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: .5fr 3.5fr 4fr 2.8fr 1.2fr;    
     grid-template-areas: "block0 block1" 
                          "block21 block22" 
                          "block3 block3"
@@ -10,25 +10,20 @@
                          "footer footer";                   
     grid-gap: 5px;
     height: 300vh; 
+    background-color: beige;
 }
 
 /* Revisar estilos para barra de navegacion */
-
-
 a:link{
     text-decoration: none;
 }
 a:hover {
-    font-size: 150%;
+    font-size: 125%;
 }
 a:visited {
     text-decoration: none;
   }
-/*
-.block0{
-    grid-column: 1 / span 1;
-}
-*/
+
 
 .block0{
     grid-area: block0;
