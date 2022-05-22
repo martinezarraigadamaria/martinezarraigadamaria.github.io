@@ -8,11 +8,17 @@
     <!-- Titulo de solapa -->
     <title>NuestroBlogDelViajero</title>
 
-    <!-- Estilos Grid -->
+    <!-- Estilos Grid/Animaciones -->
     <link rel="stylesheet" href="style/estilos_index.css">
+    <link rel="stylesheet" href="style/estilos_animaciones.css">
+
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|Grape Nuts">
+
 </head>
 
 <style>
@@ -39,7 +45,12 @@ li a {
 <section class="grid-container">
     
     <!-- Logo y barra de navegación -->
-    <div class="item block0"> Logo </div>
+    <div style="font-family: Sofia;" class="item block0"> 
+
+        <!-- <img src="https://i.imgur.com/kDDFvUp.png" class="rotate" width="100" height="100" /> -->
+        <img src="images/brujula.jpeg" class="rotate" width="50" height="50" /> 
+
+    </div>
     <div class="item block1">
         <ul>
         <li><a href="index.html">Home</a></li>
@@ -53,8 +64,8 @@ li a {
     <!-- Texto -->
     <div class="item block21">
         <div>
-            <h1>¡Viví la experiencia Brújula!</h1>
-        <p>
+            <h1 style="font-family: 'Grape Nuts', cursive;">¡Viví la experiencia Brújula!</h1>
+        <p class="font-effect-fire">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
         ut expedita omnis distinctio quia nihil dolore beatae fuga sit doloremque aliquid.
@@ -66,8 +77,14 @@ li a {
     <div class="item block22">Aquí una imagen</div>
     
     <!-- Texto + Imagen -->
-    <div> <a id="ancla-1"></a> </div>    
-    <div class="item block3">Nuestros viajes</div>
+    <!--Primer intento-->
+    <!-- <div> <a name="ancla-1"></a> </div>  -->
+    
+    
+    <div class="item block3">
+        <p><a name="ancla-1"></a> Nuestros viajes </p>
+
+    </div>
 
     <!-- Opiniones + Imagenes -->
     <div class="item block4"> Opiniones</div>

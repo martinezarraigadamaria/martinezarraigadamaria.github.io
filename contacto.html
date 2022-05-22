@@ -30,7 +30,39 @@
             <a href="tips.html">Tips del Viajero</a>
         </nav>
     </div>
-    <div class="item block2">Aquí el formulario</p>
+    <div class="item block2">
+
+        <form action="./show_data.html"  target="_blank">
+            <label for="txtNombre">Nombre</label>
+            <input type="text" name="txtNombre" id="txtNombre">
+            <br><br>
+            <label for="txtApellido">Apellido</label>
+            <input type="text" name="txtApellido" id="txtApellido">
+            <br><br>
+            <label for="txtEdad">Edad:</label>
+            <input type="number" name="txtEdad" id="txtEdad" min=0  max=100>
+            <br><br>
+            <label for="txtEmail">mail:</label>
+            <input type="email" name="txtEmail" id="txtEmail">
+            <br><br>
+            <label for="txtTel">tel</label>
+            <input type="tel" name="txtTel" id="txtTel">
+            <br><br>
+            Seleccione turno:
+            <select name="turno">
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Vespertino</option>
+            </select>
+            <br><br>
+            Consulta: <textarea name="comentario" rows="10" cols="40" placeholder="Escribe tu consulta.." >
+                      </textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <!--    <input type="reset" value=""> -->
+        </form>
+
+    </p>
     </div>
     <!-- Revisar el ancla-->
     <div> <a id="ancla-1"></a> </div>    
