@@ -19,70 +19,178 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|Grape Nuts">
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 <style>
-ul {
-    list-style-type: none;
-    margin-right: 0;
-    padding: 0;
+
+div.gallery {
+  border: 1px solid #ccc;
 }
 
-li {
-    float: left;
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
-li a {
-    display: block;
-    padding: 10px; 
-    background-color: black;
-    color: white;
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.3333%;  /* De aquí regulo cantidad de imágenes, etc... */
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.block22{
+    background: url(images/presentacion.jpg) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    text-align: center;
+
+}
+
 </style>
 
-<body>
+<body style="margin: 0px;" class="grid-container">
 
-<section class="grid-container">
-    
     <!-- Logo y barra de navegación -->
-    <div style="font-family: Sofia;" class="item block0"> 
+    <!-- / Logo -->
+    <header class = "item main-header">  
+        <div class="container logo-nav-container">
+        <p class="logo-header">
+            <img src="./images/brujula.jpeg" class="rotate" width="40" height="40"/>     
+        </p>
 
-        <!-- <img src="https://i.imgur.com/kDDFvUp.png" class="rotate" width="100" height="100" /> -->
-        <img src="images/brujula.jpeg" class="rotate" width="50" height="50" /> 
+        <!-- / nav -->
+        <nav class = "navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#ancla-1">Nuestros Viajes</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="tips.html">Tips del Viajero</a></li>
 
-    </div>
-    <div class="item block1">
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#ancla-1">Nuestros Viajes</a></li>
-        <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-        <li><a href="contacto.html">Contactanos</a></li>
-        <li><a href="tips.html">Tips del Viajero</a></li>
-        </ul>
-    </div>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
 
     <!-- Texto -->
     <div class="item block21">
         <div>
-            <h1 style="font-family: 'Grape Nuts', cursive;">¡Viví la experiencia Brújula!</h1>
-        <p class="font-effect-fire">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
-        ut expedita omnis distinctio quia nihil dolore beatae fuga sit doloremque aliquid.
+            <h1 style="font-family: 'Sofia';">¡Viví la experiencia Brújula!</h1>
+        <p style="font-family: 'Sofia';">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
+            ut expedita omnis distinctio quia nihil dolore beatae fuga sit doloremque aliquid.
         </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
+            ut expedita omnis distinctio quia nihil dolore beatae fuga sit doloremque aliquid.
+            </p>
         </div>
     </div>
 
-    <!-- Imagen -->
-    <div class="item block22">Aquí una imagen</div>
-    
-    <!-- Texto + Imagen -->
-    <!--Primer intento-->
-    <!-- <div> <a name="ancla-1"></a> </div>  -->
+    <!-- Imagen responsiva -->
+    <div class="item block22">
+    </div>
     
     
     <div class="item block3">
-        <p><a name="ancla-1"></a> Nuestros viajes </p>
+        <p><a name="ancla-1"></a> 
+        ¡Te invitamos a conocer algunos de los viajes más maravillos que hemos vivido juntos!
+        </p>
+
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/ejemplo.jpeg">
+            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="400" height="200">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        </div>
+        
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/ejemplo.jpeg">
+            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        </div>
+
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/ejemplo.jpeg">
+            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        </div>
+        
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/ejemplo.jpeg">
+            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        </div>
+
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/ejemplo.jpeg">
+            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        </div>
+                
+        <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="./images/ejemplo.jpeg">
+            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        </div>    
+          
 
     </div>
 
@@ -103,8 +211,6 @@ li a {
         <p>  <br> ¡Seguimos en las redes! </p>
         </div>
     </div>
-
-</section>
 
 </body>
 
