@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Titulo de solapa -->
-    <title>NuestroBlogDelViajero</title>
+    <title>Blog Del Viajero</title>
+ 
+    <!-- Icono de solapa -->
+    <link rel="shortcut icon" href="./images/ubicacion.jpg" type="image/x-ico">
 
     <!-- Estilos Grid/Animaciones -->
     <link rel="stylesheet" href="style/estilos_index.css">
@@ -17,85 +21,42 @@
     <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|Grape Nuts">
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!--
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Grape+Nuts">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Grape+Nuts&display=swap" rel="stylesheet">
+    -->
+  </head>
 
 <style>
-
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
+.block22{
+  background: url(images/presentacion.jpg) no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 33.3333%;  /* De aquí regulo cantidad de imágenes, etc... */
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.block22{
-    background: url(images/presentacion.jpg) no-repeat fixed center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-    text-align: center;
-
-}
 
 </style>
 
-<body style="margin: 0px;" class="grid-container">
+<body class="main-grid-container">
 
     <!-- Logo y barra de navegación -->
-    <!-- / Logo -->
+    <!-- Logo -->
     <header class = "item main-header">  
-        <div class="container logo-nav-container">
-        <p class="logo-header">
+        <div class="logo-nav-container">
+        <p style="padding-left: 17%;"> 
             <img src="./images/brujula.jpeg" class="rotate" width="40" height="40"/>     
         </p>
 
-        <!-- / nav -->
+        <!-- nav -->
         <nav class = "navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -103,28 +64,23 @@ div.desc {
                 <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
                 <li><a href="contacto.html">Contactanos</a></li>
                 <li><a href="tips.html">Tips del Viajero</a></li>
-
             </ul>
         </nav>
-        </div>
+      </div>
     </header>
 
 
     <!-- Texto -->
     <div class="item block21">
         <div>
-            <h1 style="font-family: 'Sofia';">¡Viví la experiencia Brújula!</h1>
-        <p style="font-family: 'Sofia';">
+            <h1>¡Viví la experiencia Brújula!</h1>
+        <p style="padding: 1.5em;" >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
             ut expedita omnis distinctio quia nihil dolore beatae fuga sit doloremque aliquid.
         </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
-            ut expedita omnis distinctio quia nihil dolore beatae fuga sit doloremque aliquid.
-            </p>
-        </div>
+  
+      </div>
     </div>
 
     <!-- Imagen responsiva -->
@@ -133,84 +89,136 @@ div.desc {
     
     
     <div class="item block3">
-        <p><a name="ancla-1"></a> 
-        ¡Te invitamos a conocer algunos de los viajes más maravillos que hemos vivido juntos!
-        </p>
+  
+      <h1> ¡Conocé nuestras aventuras! </h1>
+      <p style="padding: 1.5em;">
+        Te invitamos a compartir algunas de nuestras mayores aventuras, 
+        esperamos que las disfrutes y te animes a recorrer con nosostro 
+        los lugares más bellos y naturales.
+      </p>
 
-        <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/ejemplo.jpeg">
-            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="400" height="200">
+      <div class="grid-container-gallery">
+    
+        <article id="3685" class="location-listing">
+          <a class="location-title" href="#">
+              San Francisco           
+          </a>
+          <div class="location-image">
+            <a href="#">
+            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/san-fransisco-768x432.jpg" alt="san francisco">    
             </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        </div>
-        
-        <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/ejemplo.jpeg">
-            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+          </div>
+        </article>
+    
+        <article id="3688" class="location-listing">
+          <a class="location-title" href="#">
+              London            
+          </a>
+          <div class="location-image">
+            <a href="#">
+            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/london-768x432.jpg" alt="london">  
             </a>
-            <div class="desc">Add a description of the image here</div>
+          </div>    
+        </article>
+    
+        <article id="3691" class="location-listing">
+        <a class="location-title" href="#">
+            New York            
+        </a>
+        <div class="location-image">
+          <a href="#">
+          <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/new-york-768x432.jpg" alt="new york">  
+          </a>
         </div>
-        </div>
-
-        <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/ejemplo.jpeg">
-            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+        </article>
+    
+        <article id="3694" class="location-listing">
+          <a class="location-title" href="#">
+              Cape Town           
+          </a>
+          <div class="location-image">
+            <a href="#">
+            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/cape-town-768x432.jpg" alt="cape town">  
             </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        </div>
-        
-        <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/ejemplo.jpeg">
-            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+          </div>
+        </article>
+    
+        <article id="3697" class="location-listing">
+          <a class="location-title" href="#">
+              Beijing           
+          </a>
+          <div class="location-image">
+            <a href="#">
+            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/beijing-768x432.jpg" alt="beijing">    
             </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        </div>
-
-        <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/ejemplo.jpeg">
-            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
+          </div>
+        </article>
+    
+        <article id="3700" class="location-listing">
+          <a class="location-title" href="#">
+              Paris           
+          </a>
+          <div class="location-image">
+            <a href="#">
+            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/paris-768x432.jpg" alt="paris">          
             </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        </div>
-                
-        <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="./images/ejemplo.jpeg">
-            <img src="./images/ejemplo.jpeg" alt="Cinque Terre" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        </div>    
-          
-
+          </div>
+        </article>
+    
+      </div>
+      <!-- end grid container -->    
+    </div>
     </div>
 
     <!-- Opiniones + Imagenes -->
-    <div class="item block4"> Opiniones</div>
+    <div class="item block40"> 
+      <h1 style="padding: 2em 0">
+        Leé la opinión de quienes confiaron en nosotros
+      </h1>
+      </div>
+
+    <div style="padding: 1em ;" class="item block41">  
+
+      <p style="text-align: left; width: 60%;" >
+        <img src="./images/brujula.jpeg" alt="" width="25">
+
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+       Debitis adipisci ullam inventore laudantium, 
+       cupiditate ipsam minus cum rerum veniam consectetur expedita.
+      </p>
+
+      <br>
+      <p style="text-align: right; margin-left: 6em;">
+        <img src="./images/brujula.jpeg" alt="" width="25">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Sit doloremque doloribus adipisci facere, 
+        esse perferendis minus eos iusto, dolore voluptates quia culpa commodi autem asperiores harum aspernatur illo, est praesentium.
+      </p>
+      <br>
+      <p style="text-align: left; width: 75%;">
+        <img src="./images/brujula.jpeg" alt="" width="25">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Aliquid amet velit, explicabo sit asperiores molestias cum, 
+        nulla at facere reiciendis error architecto iure obcaecati nostrum illum minima optio laudantium dolor.
+      </p>
+
+    </div>
+  
 
     <!-- Footer -->
-    <div class="item footer"> 
+    <footer class="item footer"> 
     
-        <div>
-        <br>
-        <!-- Revisar, problemas al centrar el texto -->
+        <p style="padding-top: 10%">
         <a style="padding-right: 40px; padding-left: 40px;" href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
         <a style="padding-right: 40px;" href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
         <a style="padding-right: 40px;"  href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>
         <a style="padding-right: 40px;"  href="https://www.tiktok.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-tiktok"></i></a>
-    
-        <p>  <br> ¡Seguimos en las redes! </p>
-        </div>
-    </div>
+        </p>
+        
+        <p style="font-size: 1.5em;">
+        ¡Seguimos en las redes! 
+        </p>
+      </footer>
 
 </body>
 

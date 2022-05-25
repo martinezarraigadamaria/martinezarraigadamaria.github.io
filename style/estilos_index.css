@@ -1,43 +1,49 @@
-.grid-container{
+.main-grid-container{
     display: grid;
     grid-template-columns: 2.5fr 3.5fr;
-    grid-template-rows: .3fr 3.7fr 4fr 2.9fr 1.1fr;    
+    grid-template-rows: .4fr 3.6fr 6fr 3.4fr 1.7fr;    
     grid-template-areas: "main-header main-header" 
                          "block21 block22" 
                          "block3 block3"
-                         "block4 block4"
+                         "block40 block41"
                          "footer footer";                   
     grid-gap: 2px;
-    height: 300vh; 
+    height: 400vh; 
     background-color: white;
+}
+
+body {
+    margin: 0px; 
 }
 
 .main-header{
     grid-area: main-header;
-    background: gray;
-	color: white;
-	width: 100%;
-	left: 0;
-	top: 0;
+    /*background: gray;*/
+    /*color: white;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
 }
 
 .logo-nav-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 nav {
-	float: right;
-    font-family: Sofia;
-    padding-top: 2em;
+	  float: right;
+    padding-top: 1.5%;
+    font-family: 'Caveat', cursive;
+    font-size: larger;
+    font-weight: bold;
 }
 
 	nav ul {
 		margin: 0;
-		padding: 0;
+		padding-right: 20px;
 		list-style: none;
-        list-style-type: none;
-        background-color: transparent;
+    list-style-type: none;
+    background-color: transparent;
 	}
 	
 		nav ul li {
@@ -46,16 +52,37 @@ nav {
 			
 			nav ul li a {
 				display: block;
-                color: white;
+        color: white;
 				padding: 10px;
-				text-decoration: none;
 			}
 
-a:link {text-decoration: none;}
-a:hover {font-size: 125%;}
-a:visited {text-decoration: none;}
+a:link {
+  text-decoration: none;
+}
 
+a:hover {
+  font-size: 140%;
+  color: gray; 
+}
 
+a:visited {  
+  text-decoration: none;
+}
+
+h1 { 
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  text-align: center;
+}
+
+/* Debería elegir segundas opciones en textos */
+div > p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.25em;
+  line-height: 1.7em;
+  /*padding: 1em;*/
+  text-align: center;
+}
 
 .block21{
     grid-area: block21;
@@ -70,12 +97,20 @@ a:visited {text-decoration: none;}
     grid-area: block3;
 }
 
-.block4{
-    grid-area: block4;
+.block40{
+    grid-area: block40;
 }
 
-.footer{
+.block41{
+    grid-area: block41;
+}
+
+
+footer{
     grid-area: footer;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
 }
 
 .item{
@@ -95,3 +130,84 @@ a:visited {text-decoration: none;}
   }
 */
 
+
+
+/*body {
+  padding: 100px;
+  font-family: sans-serif;
+  background: #f2f2f2;
+}*/
+
+/*img {
+  width: 100%; 
+  height: auto;
+}*/
+
+/*h2 {
+  margin-bottom: .5em;
+}*/
+
+.grid-container-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 5em;
+  margin: 3em;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  font-family: 'Caveat', cursive;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
