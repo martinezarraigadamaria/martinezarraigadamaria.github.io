@@ -1,54 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Titulo de solapa-->
-    <title>Sobre Nosotros</title>
+    <!-- Titulo de solapa -->
+    <title>Blog Del Viajero</title>
+ 
+    <!-- Icono de solapa -->
+    <link rel="shortcut icon" href="./images/ubicacion.jpg" type="image/x-ico">
 
-    <!--Estilos Grid-->
+    <!-- Estilos Grid/Animaciones -->
     <link rel="stylesheet" href="style/estilos_others.css">
+    <link rel="stylesheet" href="style/estilos_animaciones.css">
+
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
-</head>
 
-<body>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
+  </head>
 
-<!-- Sección 1 -->
 
-<section class="grid-container">
-    <div class="item block0"> Logo </div>
-    <div class="item block1">
-        <nav>
-            <a href="index.html">Home</a>
-            <!-- <a href="#ancla-1">Nuestros Viajes</a> -->
-            <a href="index.html#ancla-1">Nuestros Viajes</a>
-            <a href="sobrenosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contactanos</a>
-            <a href="tips.html">Tips del Viajero</a>
+<style>
+
+.block1 {
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+    border-radius: 5px;
+}
+
+</style>
+
+<body class="main-grid-container">
+
+    <!-- Logo y barra de navegación -->
+    <!-- Logo -->
+    <header class = "item main-header">  
+        <div class="logo-nav-container">
+        <p style="padding-left: 17%;"> 
+            <img src="./images/brujula.jpeg" class="rotate" width="40" height="40"/>     
+        </p>
+
+        <!-- nav -->
+        <nav class = "navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#ancla-1">Nuestros Viajes</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="tips.html">Tips del Viajero</a></li>
+            </ul>
         </nav>
+      </div>
+    </header>
+
+
+    <!-- Texto -->
+    <div class="item block1">
+    <img style="overflow: hidden; width: 100%;" src="./images/mochileros.gif" alt=""> 
     </div>
-    <div class="item block2">Sobre Nosotros
-        <p>revisar como hacer para volver a "Nuestros Viajes"</p>
+
+    <div style="padding-top: 2em" class="item block2">
+        <h1>¿Quiénes somos?</h1>
+        <br>
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Consequatur, maxime? Asperiores placeat commodi nemo beatae impedit numquam nesciunt 
+        officia earum repellendus sapiente id sit, tenetur provident nam repudiandae quo deserunt?
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Doloremque necessitatibus quod voluptatum. Aperiam quas itaque laudantium, dolor, 
+        neque illo nam beatae totam exercitationem suscipit cum error harum eos eaque amet!
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Quasi nisi, vel magni quae placeat natus ab officiis sed eveniet ipsum 
+        praesentium deleniti molestias dicta quaerat error nemo alias maxime nostrum!    
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quibusdam adipisci doloremque quis cupiditate consequuntur vitae omnis, 
+        ullam, delectus incidunt nam soluta ex debitis sunt, assumenda quasi vero beatae 
+        officia explicabo.
+        </p>
     </div>
-    <!-- Revisar el ancla-->
-    <div> <a id="ancla-1"></a> </div>    
+
 
     <!-- Footer -->
-    <div class="item footer"> 
-
-    <div>
-    <nav>
-        <a href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>        
-    </nav>
-
-    <p> ¡Seguinos en nuestras redes! </p>
-    </div>
+    <footer class="item footer"> 
     
-    </div>    
-</section>
+        <p style="padding-top: 10%">
+        <a style="padding-right: 40px; padding-left: 40px;" href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
+        <a style="padding-right: 40px;" href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
+        <a style="padding-right: 40px;"  href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>
+        <a style="padding-right: 40px;"  href="https://www.tiktok.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-tiktok"></i></a>
+        </p>
+        
+        <p style="font-size: 1.5em;">
+        ¡Seguimos en las redes! 
+        </p>
+    </footer>
+
+</body>
+
+</html>

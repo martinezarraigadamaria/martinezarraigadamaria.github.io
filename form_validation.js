@@ -1,6 +1,6 @@
 function validarNombre(nombre) {
   if (nombre == ""){
-        mensaje = "*Campo obligatorio";
+        mensaje = "*Campo obligatorio.";
         document.getElementById("campo_nombre").innerHTML = mensaje;
         return false;
     }    
@@ -8,7 +8,7 @@ function validarNombre(nombre) {
 
 function validarApellido(apellido) {
   if (apellido == ""){
-        mensaje = "*Campo obligatorio";
+        mensaje = "*Campo obligatorio.";
         document.getElementById("campo_apellido").innerHTML = mensaje;
         return false;
     }    

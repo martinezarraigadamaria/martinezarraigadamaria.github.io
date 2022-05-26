@@ -1,74 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Titulo de solapa-->
-    <title>formulario</title>
+    <!-- Titulo de solapa -->
+    <title>Blog Del Viajero</title>
+ 
+    <!-- Icono de solapa -->
+    <link rel="shortcut icon" href="./images/ubicacion.jpg" type="image/x-ico">
 
-    <!--Estilos Grid-->
+    <!-- Estilos Grid/Animaciones -->
     <link rel="stylesheet" href="style/estilos_others.css">
+    <link rel="stylesheet" href="style/estilos_animaciones.css">
+
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
+
     <!-- Validacion de form -->
     <script src="./form_validation.js"></script>
-
+  
 </head>
 
-<body>
+<style>
 
-<!-- Sección 1 -->
-<section class="grid-container">
-    <div class="item block0"> Logo </div>
-    <div class="item block1">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#ancla-1">Nuestros Viajes</a>
-            <a href="sobrenosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contactanos</a>
-            <a href="tips.html">Tips del Viajero</a>
+textarea:focus {
+  background-color: lightgrey;    
+}
+
+input:focus {
+  background-color: lightgrey;    
+}
+
+form {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+    margin-left: 5em;
+}
+
+input {
+    font-family: 'Caveat', cursive;
+}
+
+input {
+  width: 170%;
+  padding: 7px 5px;
+  box-sizing: border-box;
+  border: 2px;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 170%;
+  height: 150px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: 2px;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+}
+
+form > b {
+    color: red;
+    font-size: .7em;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset]:hover {
+  background-color: red;
+}
+
+
+.block1 {
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block2 {
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: left;
+  align-items:center;
+}
+
+</style>
+
+<body class="main-grid-container">
+
+    <!-- Logo y barra de navegación -->
+    <!-- Logo -->
+    <header class = "item main-header">  
+        <div class="logo-nav-container">
+        <p style="padding-left: 17%;"> 
+            <img src="./images/brujula.jpeg" class="rotate" width="40" height="40"/>     
+        </p>
+
+        <!-- nav -->
+        <nav class = "navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#ancla-1">Nuestros Viajes</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="tips.html">Tips del Viajero</a></li>
+            </ul>
         </nav>
+      </div>
+    </header>
+
+
+    <!-- Texto -->
+    <div class="item block1">
+        <div>
+        <h1>Contactanos</h1>
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Consequatur, maxime? Asperiores placeat commodi nemo beatae impedit numquam nesciunt 
+        officia earum repellendus sapiente id sit, tenetur provident nam repudiandae quo deserunt?
+        </p><br>
+    </div>
     </div>
 
     <div class="item block2">
 
-        <form name="myForm" action="./show_data.html" onsubmit="return validateForm()">
-            Apellido: <input type="text" id = "apellido" name="apellido"> 
-            <b style="color: red; font-size: 10px;" id="campo_apellido"></b>
-            <br><br>
-            Nombre: <input type="text" id="nombre" name="nombre">
-            <b style="color: red; font-size: 10px;" id="campo_nombre"></b>
-            <br><br>
-            Edad: <input type="number" id="edad" name="edad">
-            <b style="color: red;font-size: 10px;" id="campo_edad"></b>
-            <br><br>
-            Telefono: <input id="tel" name="tel">
-            <b style="color: red;font-size: 10px;" id="campo_tel"></b>
-            <br><br>
-            Mail: <input  id="mail" name="mail">
-            <b style="color: red;font-size: 10px;" id="campo_mail"></b>
-            <br><br>
-        <input type="submit" value="Enviar">
+        <form  class="form" name="myForm" action="./show_data.html" onsubmit="return validateForm()">
+           
+            <!-- Apellido -->
+            <label for="apellido">Apellido</label> <br>
+            <input type="text" id = "apellido" name="apellido">
+            <br>
+            <b id="campo_apellido"></b> 
+            <br>
+            
+            <!-- Nombre -->
+            <label for="nombre">Nombre</label> <br>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <b id="campo_nombre"></b>
+            <br>
+
+            <!-- Edad -->
+            <label for="edad">Edad</label> <br>
+            <input type="number" id="edad" name="edad">
+            <br>
+            <b id="campo_edad"></b>
+            <br>
+
+            <!-- Telefono -->
+            <label for="tel">Teléfono</label> <br>
+            <input id="tel" name="tel">
+            <br>
+            <b id="campo_tel"></b>
+            <br>
+
+            <!-- Mail -->
+            <label for="tel">Correo Electrónico</label> <br>
+            <input  id="mail" name="mail">
+            <br>
+            <b id="campo_mail"></b>
+            <br>  
+
+            <!-- Consulta -->
+            <label for="consulta">Consulta</label> <br>
+            <textarea id="consulta" name="consulta">¡Tu consulta no molesta!</textarea>
+            <b id="campo_consulta"></b>
+            <br>
+            <p>
+        <input style="margin: 1em 0" type="submit" value="Enviar">
         <input type="reset" value="Limpiar">
-
-        </form>
-    </div>  
-   <div class="item footer"> 
-    
-    <div>
-    <nav>
-        <a href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>        
-    </nav>
-
-    <p> ¡Seguinos en nuestras redes! </p>
+            </p>
+       </form>
     </div>
+
+
+    <!-- Footer -->
+    <footer class="item footer"> 
     
-    </div>
-    
-</section>
+        <p style="padding-top: 10%">
+        <a style="padding-right: 40px; padding-left: 40px;" href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
+        <a style="padding-right: 40px;" href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
+        <a style="padding-right: 40px;"  href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>
+        <a style="padding-right: 40px;"  href="https://www.tiktok.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-tiktok"></i></a>
+        </p>
+        
+        <p style="font-size: 1.5em;">
+        ¡Seguimos en las redes! 
+        </p>
+    </footer>
+
+</body>
+
+</html>

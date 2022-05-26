@@ -1,31 +1,33 @@
 /**/
-.grid-container{
+.main-grid-container{
     display: grid;
-    /*
-    grid-template: 1fr 3fr 4fr 3fr 1fr / 1fr 3fr; 
-    /*font-size: 30px*/
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: "block0 block1" 
-                         "block2 block2"
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: .8fr 6fr 1fr;
+    grid-template-areas: "main-header main-header" 
+                         "block1 block2"
                          "footer footer";                   
-    grid-gap: 10px;
-    height: 100vh; 
+    grid-gap: 2px;
+    height: 200vh; 
 }
 
-/* Revisar estilos para barra de navegacion */
-a:link{
-    text-decoration: none;
+.main-grid-container-tips{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .8fr 6fr 1fr;
+    grid-template-areas: "main-header " 
+                         "block"
+                         "footer";                   
+    grid-gap: 2px;
+    height: 200vh; 
 }
-a:hover {
-    font-size: 150%;
-}
-a:visited {
-    text-decoration: none;
-  }
 
-.block0{
-    grid-area: block0;
+
+body {
+    margin: 0px; 
+}
+
+.main-header{
+    grid-area: main-header;
 }
 
 .block1{
@@ -36,8 +38,74 @@ a:visited {
     grid-area: block2;
 }
 
-.footer{
+footer{
     grid-area: footer;
+}
+
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+	  float: right;
+    padding-top: 1.5%;
+    font-family: 'Caveat', cursive;
+    font-size: larger;
+    font-weight: bold;
+}
+
+	nav ul {
+		margin: 0;
+		padding-right: 20px;
+		list-style: none;
+    list-style-type: none;
+    background-color: transparent;
+	}
+	
+		nav ul li {
+			display: inline-block;
+		}
+			
+			nav ul li a {
+				display: block;
+        color: white;
+				padding: 10px;
+			}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 140%;
+  color: gray; 
+}
+
+a:visited {  
+  text-decoration: none;
+}
+
+h1 { 
+  font-family: 'Caveat', cursive;
+  font-size: 4em;
+  text-align: center;
+}
+
+div > p {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.25em;
+    line-height: 1.7em;
+    /*padding: 1em;*/
+    text-align: center;
+  }
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
 }
 
 .item{
@@ -47,15 +115,10 @@ a:visited {
     border-radius: 10px;
 }
 
-.grid-container > div {
-    text-align: center;
-    /*padding: 20px 0;*/
-    font-size: 20px;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+
+
+
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px){

@@ -1,58 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Titulo de solapa-->
-    <title>Tips</title>
+    <!-- Titulo de solapa -->
+    <title>Blog Del Viajero</title>
+ 
+    <!-- Icono de solapa -->
+    <link rel="shortcut icon" href="./images/ubicacion.jpg" type="image/x-ico">
 
-    <!--Estilos Grid-->
+    <!-- Estilos Grid/Animaciones -->
     <link rel="stylesheet" href="style/estilos_others.css">
+    <link rel="stylesheet" href="style/estilos_animaciones.css">
+
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
-    
-</head>
 
-<body>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
+  </head>
 
-<!-- Sección 1 -->
-<section class="grid-container">
-    <div class="item block0"> Logo </div>
-    <div class="item block1">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#ancla-1">Nuestros Viajes</a>
-            <a href="sobrenosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contactanos</a>
-            <a href="tips.html">Tips del Viajero</a>
+<style>
+
+.gallery-video {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+iframe {
+  overflow: hidden;
+  padding: 2em 5em;
+  border-radius: 10px;
+}
+
+</style>
+
+
+<body class="main-grid-container-tips">
+
+    <!-- Logo y barra de navegación -->
+    <!-- Logo -->
+    <header class = "item main-header">  
+        <div class="logo-nav-container">
+        <p style="padding-left: 17%;"> 
+            <img src="./images/brujula.jpeg" class="rotate" width="40" height="40"/>     
+        </p>
+
+        <!-- nav -->
+        <nav class = "navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#ancla-1">Nuestros Viajes</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="tips.html">Tips del Viajero</a></li>
+            </ul>
         </nav>
-    </div>
-    <div class="item block2">Tips</p>
-
-        <!-- Mi video -->
-        <iframe width="250" height="250" src="https://www.youtube.com/embed/G3pj6nzDhUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="250" height="250" src="https://www.youtube.com/embed/G3pj6nzDhUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </div>
-    <!-- Revisar el ancla-->
-    <div> <a id="ancla-1"></a> </div>    
+      </div>
+    </header>
 
 
-    <!-- Footer -->
-    <div class="item footer"> 
-
-    <div>
-    <nav>
-        <a href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>        
-    </nav>
-
-    <p> ¡Seguinos en nuestras redes! </p>
+    <!-- Texto -->
+    <div class="item block">
+        <h1>¡Consejos para disfrutar tu viaje!</h1>
+        <p style="padding: 1em;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati qui fuga, quaerat odio,
+             numquam nam architecto omnis mollitia officiis nostrum accusantium. 
+            Iste sit libero amet incidunt praesentium consectetur? Aperiam, maxime.
+        <br>
+        <br>
+        </p>
+        <div  class="gallery-video">
+            <span>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/xcr1utQX-X0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/Wb1oZiUJqnI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+            </span>
+        </div>
     </div>
     
-    </div>  
-</section>
+    <!-- Footer -->
+    <footer class="item footer"> 
+    
+        <p style="padding-top: 10%">
+        <a style="padding-right: 40px; padding-left: 40px;" href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
+        <a style="padding-right: 40px;" href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
+        <a style="padding-right: 40px;"  href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>
+        <a style="padding-right: 40px;"  href="https://www.tiktok.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-tiktok"></i></a>
+        </p>
+        
+        <p style="font-size: 1.5em;">
+        ¡Seguimos en las redes! 
+        </p>
+    </footer>
+
+</body>
+
+</html>
