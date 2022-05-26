@@ -10,12 +10,11 @@
     <title>Blog Del Viajero</title>
  
     <!-- Icono de solapa -->
-    <link rel="shortcut icon" href="./images/ubicacion.jpg" type="image/x-ico">
+    <link rel="shortcut icon" href="./images/ubi.png" type="image/x-ico">
 
     <!-- Estilos Grid/Animaciones -->
     <link rel="stylesheet" href="style/estilos_index.css">
     <link rel="stylesheet" href="style/estilos_animaciones.css">
-
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
@@ -25,21 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
-  </head>
-
-<style>
-.block22{
-  background: url(images/foto.jpg) no-repeat fixed center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  filter: blur(1.5px); /* Ver */
-}
-
-
-</style>
+</head>
 
 <body class="main-grid-container">
 
@@ -70,7 +55,7 @@
     <div class="item block21">
         <div>
             <h1>¡Viví la experiencia Brújula!</h1>
-        <p style="padding: 1.5em;" >
+        <p class="p-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
             ut expedita omnis distinctio quia nihil dolore beatae fuga sit doloremque aliquid.
@@ -81,13 +66,15 @@
 
     <!-- Imagen responsiva -->
     <div class="item block22">
-    </div>
-    
+      <img style="border-radius: 10px;" style="overflow: hidden; width: 100%;" src="./images/foto.jpg" alt=""> 
+      </div>
+      
     
     <div class="item block3">
+
       <a name="ancla-1"></a>
-      <h1> ¡Conocé nuestras aventuras! </h1>
-      <p style="padding: 1.5em;">
+      <h1 style="padding-top: 2em;"> ¡Conocé nuestras aventuras! </h1>
+      <p class="p-text">
         Te invitamos a compartir algunas de nuestras mayores aventuras, 
         esperamos que las disfrutes y te animes a recorrer con nosostro 
         los lugares más bellos y naturales.
@@ -95,67 +82,65 @@
 
       <div class="grid-container-gallery">
     
-        <article id="3685" class="location-listing">
-          <!-- <a class="location-title" href="#"> -->
+        <article class="location-listing">
           <a class="location-title">
-              San Francisco           
+              Misiones          
           </a>
           <div class="location-image">
-            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/san-fransisco-768x432.jpg" alt="san francisco">    
-            
+            <img width="310" height="180" src="./images/misiones.jpg">
           </div> 
         </article>
     
-        <article id="3688" class="location-listing">
+        <article class="location-listing">
           <a class="location-title">
-              London            
+              Bariloche            
           </a>
           <div class="location-image">
-            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/london-768x432.jpg" alt="london">  
+            <img width="310" height="180" src="./images/bariloche.jpg">
           </div>    
         </article>
     
-        <article id="3691" class="location-listing">
+        <article class="location-listing">
         <a class="location-title">
-            New York   
+            Machu Picchu  
         </a>
         <div class="location-image">
-          <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/new-york-768x432.jpg" alt="new york">  
+          <img width="310" height="180" src="./images/machupichu.jpg">
         </div>
         </article>
     
-        <article id="3694" class="location-listing">
+        <article class="location-listing">
           <a class="location-title">
-              Cape Town           
+              Cartagena           
           </a>
           <div class="location-image">
-            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/cape-town-768x432.jpg" alt="cape town">  
+            <img width="310" height="180" src="./images/cartagena.jpg">
           </div>
         </article>
     
         <article id="3697" class="location-listing">
           <a class="location-title">
-              Beijing     
+              Malta    
           </a>
           <div class="location-image">
-            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/beijing-768x432.jpg" alt="beijing">    
+            <img width="310" height="180" src="./images/malta.jpg">
             </a>
           </div>
         </article>
     
         <article id="3700" class="location-listing">
           <a class="location-title">
-              Paris           
+              Atenas           
           </a>
           <div class="location-image">
-            <img width="300" height="169" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/paris-768x432.jpg" alt="paris">          
+            <img width="310" height="180" src="./images/atenas.jpg">
           </div>
         </article>
     
       </div>
       <!-- end grid container -->    
-      <p style="text-align: right; font-family: Caveat, cursive; padding-right: 1em;">
-        <a style="color: white;" href="#ancla-inicio">Ir a Inicio</a>
+      <p style="text-align: right; padding-right: 1em;">
+        <a  href="#ancla-inicio">Ir a Inicio</a>
       </p>
 
     </div>
@@ -163,31 +148,27 @@
 
     <!-- Opiniones + Imagenes -->
     <div class="item block40"> 
-      <h1 style="padding: 2em 0">
+      <h1>
         Leé la opinión de quienes confiaron en nosotros
       </h1>
-      </div>
+    </div>
 
-    <div style="padding: 1em ;" class="item block41">  
+    <div style="padding: 2em 5em;" class="item block41">  
 
       <p style="text-align: left; width: 60%;" >
-        <img src="./images/brujula.jpeg" alt="" width="25">
-
        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
        Debitis adipisci ullam inventore laudantium, 
        cupiditate ipsam minus cum rerum veniam consectetur expedita.
       </p>
 
       <br>
-      <p style="text-align: right; margin-left: 6em;">
-        <img src="./images/brujula.jpeg" alt="" width="25">
+      <p style="text-align: right ;margin-left: 6em;">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
         Sit doloremque doloribus adipisci facere, 
         esse perferendis minus eos iusto, dolore voluptates quia culpa commodi autem asperiores harum aspernatur illo, est praesentium.
       </p>
       <br>
       <p style="text-align: left; width: 75%;">
-        <img src="./images/brujula.jpeg" alt="" width="25">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
         Aliquid amet velit, explicabo sit asperiores molestias cum, 
         nulla at facere reiciendis error architecto iure obcaecati nostrum illum minima optio laudantium dolor.
@@ -198,18 +179,23 @@
 
     <!-- Footer -->
     <footer class="item footer"> 
-    
-        <p style="padding-top: 10%">
-        <a style="padding-right: 40px; padding-left: 40px;" href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
-        <a style="padding-right: 40px;" href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
-        <a style="padding-right: 40px;"  href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>
-        <a style="padding-right: 40px;"  href="https://www.tiktok.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-tiktok"></i></a>
+        <p>
+          <br><br>
+        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
         </p>
-        
-        <p style="font-size: 1.5em;">
+      
+        <p>
+          <br><br>
+        </p>
+
+        <p>
         ¡Seguimos en las redes! 
         </p>
-      </footer>
+      
+    </footer>
 
 </body>
 

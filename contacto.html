@@ -10,12 +10,11 @@
     <title>Blog Del Viajero</title>
  
     <!-- Icono de solapa -->
-    <link rel="shortcut icon" href="./images/ubicacion.jpg" type="image/x-ico">
+    <link rel="shortcut icon" href="./images/ubi.png" type="image/x-ico">
 
     <!-- Estilos Grid/Animaciones -->
     <link rel="stylesheet" href="style/estilos_others.css">
     <link rel="stylesheet" href="style/estilos_animaciones.css">
-
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/3a6a7a1eda.js" crossorigin="anonymous"></script>
@@ -31,75 +30,6 @@
   
 </head>
 
-<style>
-
-textarea:focus {
-  background-color: lightgrey;    
-}
-
-input:focus {
-  background-color: lightgrey;    
-}
-
-form {
-    font-family: 'Caveat', cursive;
-    font-size: 1.5em;
-    margin-left: 5em;
-}
-
-input {
-    font-family: 'Caveat', cursive;
-}
-
-input {
-  width: 170%;
-  padding: 7px 5px;
-  box-sizing: border-box;
-  border: 2px;
-  border-radius: 5px;
-}
-
-textarea {
-  width: 170%;
-  height: 150px;
-  padding: 10px 10px;
-  box-sizing: border-box;
-  border: 2px;
-  border-radius: 5px;
-  font-size: 14px;
-  resize: none;
-}
-
-form > b {
-    color: red;
-    font-size: .7em;
-}
-
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-input[type=reset]:hover {
-  background-color: red;
-}
-
-
-.block1 {
-  /*IMPORTANTE*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.block2 {
-  /*IMPORTANTE*/
-  display: flex;
-  justify-content: left;
-  align-items:center;
-}
-
-</style>
 
 <body class="main-grid-container">
 
@@ -126,10 +56,10 @@ input[type=reset]:hover {
 
 
     <!-- Texto -->
-    <div class="item block1">
+    <div class="item block1-contacto">
         <div>
         <h1>Contactanos</h1>
-        <p>
+        <p class="p-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         Consequatur, maxime? Asperiores placeat commodi nemo beatae impedit numquam nesciunt 
         officia earum repellendus sapiente id sit, tenetur provident nam repudiandae quo deserunt?
@@ -137,7 +67,7 @@ input[type=reset]:hover {
     </div>
     </div>
 
-    <div class="item block2">
+    <div class="item block2-contacto">
 
         <form  class="form" name="myForm" action="./show_data.html" onsubmit="return validateForm()">
            
@@ -188,21 +118,26 @@ input[type=reset]:hover {
        </form>
     </div>
 
-
     <!-- Footer -->
     <footer class="item footer"> 
+      <p>
+        <br><br>
+      <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+      </p>
     
-        <p style="padding-top: 10%">
-        <a style="padding-right: 40px; padding-left: 40px;" href="https://www.twitter.com"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-twitter"></i></a>
-        <a style="padding-right: 40px;" href="https://www.facebook.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-facebook-square"></i></a>
-        <a style="padding-right: 40px;"  href="https://www.instagram.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-instagram"></i></a>
-        <a style="padding-right: 40px;"  href="https://www.tiktok.com/"><i style="color: white; font-size: 1.5em;" class="fa-brands fa-tiktok"></i></a>
-        </p>
-        
-        <p style="font-size: 1.5em;">
-        ¡Seguimos en las redes! 
-        </p>
-    </footer>
+      <p>
+        <br><br>
+      </p>
+
+      <p>
+      ¡Seguimos en las redes! 
+      </p>
+    
+  </footer>
+
 
 </body>
 
