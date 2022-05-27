@@ -35,7 +35,7 @@
 
 iframe {
   overflow: hidden;
-  padding: 2em 5em;
+  padding: 2em 2.5em;
   border-radius: 10px;
 }
 
@@ -284,7 +284,7 @@ footer{
                          "block2" 
                          "block1"
                          "footer";   
-    height: 250vh;                 
+    height: 200vh;                 
 
 }
 
@@ -295,7 +295,7 @@ footer{
   grid-template-areas: "main-header " 
                        "block"
                        "footer";                   
-  height: 250vh; 
+  height: 200vh; 
 }
 
 
