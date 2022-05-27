@@ -38,6 +38,16 @@ function validarMail(correo) {
   }
 }
 
+function validarConsulta(texto) {
+  if (texto == "" || texto == "¡Tu consulta no molesta!"){
+    mensaje = "*Haga su consulta.";
+    document.getElementById("campo_consulta").innerHTML = mensaje;
+    return false;
+}    
+}
+
+
+
 function validateForm() {
 
   let apellido = validarApellido( 
@@ -46,17 +56,18 @@ function validateForm() {
   let nombre = validarNombre(
     document.getElementById("nombre").value
   ) 
-  let edad = validarEdad(
-    document.getElementById("edad").value
-  ) 
   let tel = validarTelefono(
     document.getElementById("tel").value
   ) 
   let mail = validarMail(
     document.getElementById("mail").value
   ) 
+  let consulta = validarConsulta(
+    document.getElementById("consulta").value
+  ) 
   
-  if (nombre==0 || apellido==0 || edad==0 || mail==0 || tel==0){
+
+  if (nombre==0 || apellido==0 || mail==0 || tel==0 || consulta==0){
     return false;
   }
   
