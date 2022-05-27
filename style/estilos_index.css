@@ -1,17 +1,19 @@
 .main-grid-container{
     display: grid;
-    grid-template-columns: 2fr 2fr 2.5fr;
-    grid-template-rows: 1fr 3.6fr 6fr 4.1fr 1.3fr;    
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 3.6fr 6.2fr 4.1fr 1.4fr;    
     grid-template-areas: "main-header main-header main-header" 
                          "block21 block21 block22" 
                          "block3 block3 block3"
-                         "block40 block41 block41"
+                         "block41 block40 block44"
                          "footer footer footer";                   
-    height: 500vh;
+    height: 450vh;
     background-color:black; /**/
     color: white;
 }
-
+.block44{
+  grid-area: block44;
+}
 
 body {
     margin: 0px; 
@@ -21,10 +23,23 @@ body {
     grid-area: main-header;
 }
 
+.text-logo {
+  font-family: Caveat, cursive; 
+  color: gray; 
+  font-size: 2em; 
+  font-weight: bolder;
+  /* standard gradient background */
+  background: linear-gradient(gray, white);
+
+  /* clip informático */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .logo-nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: .5em 2em;
 }
 
 

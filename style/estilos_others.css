@@ -138,6 +138,19 @@ input[type=reset]:hover {
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* ESTILOS COMPARTIDOS */
 
+.text-logo {
+  font-family: Caveat, cursive; 
+  color: gray; 
+  font-size: 2em; 
+  font-weight: bolder;
+  /* standard gradient background */
+  background: linear-gradient(gray, white);
+
+  /* clip informático */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .p-text {
     padding: 1.5em;
     color: white;
@@ -173,7 +186,7 @@ body {
 .logo-nav-container {
     display: flex;
     justify-content: space-between;
-    padding: 1.5em;
+    padding: .5em 2em;
 }
 
 .navigation {
