@@ -33,24 +33,27 @@
 
 <body class="main-grid-container">
 
-    <!-- Logo y barra de navegación -->
+     <!-- Logo y barra de navegación -->
     <!-- Logo -->
     <header class = "item main-header">  
+        
         <div class="logo-nav-container">
-        <p style="padding-left: 17%;"> 
-            <img src="./images/brujula.jpeg" class="rotate" width="40" height="40"/>     
-        </p>
+            <div class="logo"> 
+                <img src="./images/brujula.jpeg" class="rotate" width="40" height="40"/>     
+            </div>
 
-        <!-- nav -->
-        <nav class = "navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#ancla-1">Nuestros Viajes</a></li>
-                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
-                <li><a href="tips.html">Tips del Viajero</a></li>
-            </ul>
-        </nav>
+            <!-- nav -->
+        
+            <div class = "navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#ancla-1">Nuestros Viajes</a></li>
+                    <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="tips.html">Tips del Viajero</a></li>
+                </ul>
+            </div>
+          
       </div>
     </header>
 
@@ -72,71 +75,71 @@
         <form  class="form" name="myForm" action="./show_data.html" onsubmit="return validateForm()">
            
             <!-- Apellido -->
-            <label for="apellido">Apellido</label> <br>
+            <label for="apellido">Apellido</label> 
             <input type="text" id = "apellido" name="apellido">
-            <br>
+          
             <b id="campo_apellido"></b> 
             <br>
             
             <!-- Nombre -->
-            <label for="nombre">Nombre</label> <br>
+            <label for="nombre">Nombre</label> 
             <input type="text" id="nombre" name="nombre">
-            <br>
+            
             <b id="campo_nombre"></b>
             <br>
 
             <!-- Edad -->
-            <label for="edad">Edad</label> <br>
+            <label for="edad">Edad</label> 
             <input type="number" id="edad" name="edad">
-            <br>
+            
             <b id="campo_edad"></b>
             <br>
 
             <!-- Telefono -->
-            <label for="tel">Teléfono</label> <br>
+            <label for="tel">Teléfono</label> 
             <input id="tel" name="tel">
-            <br>
+         
             <b id="campo_tel"></b>
             <br>
 
             <!-- Mail -->
-            <label for="tel">Correo Electrónico</label> <br>
+            <label for="tel">Correo Electrónico</label> 
             <input  id="mail" name="mail">
-            <br>
+            
             <b id="campo_mail"></b>
             <br>  
 
             <!-- Consulta -->
-            <label for="consulta">Consulta</label> <br>
+            <label for="consulta">Consulta</label> 
             <textarea id="consulta" name="consulta">¡Tu consulta no molesta!</textarea>
             <b id="campo_consulta"></b>
+            
             <br>
-            <p>
-        <input style="margin: 1em 0" type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
-            </p>
+        <input style="margin: 1em 0; font-family: Caveat, cursiva;" type="submit" value="Enviar">
+        <input style="font-family: Caveat, cursiva;" type="reset" value="Limpiar">
+            
        </form>
     </div>
 
     <!-- Footer -->
-    <footer class="item footer"> 
-      <p>
-        <br><br>
-      <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a>
-      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
-      </p>
-    
-      <p>
-        <br><br>
-      </p>
+    <footer style="padding-top: 2em" class="item footer"> 
+        <div>
+            <ul>
+            <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+        <p>
+          <br>
+        </p>
 
-      <p>
-      ¡Seguimos en las redes! 
-      </p>
-    
-  </footer>
+        <p>
+        ¡Seguinos en las redes! 
+        </p>
+      
+    </footer>
 
 
 </body>

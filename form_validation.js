@@ -16,7 +16,7 @@ function validarApellido(apellido) {
 
 function validarEdad(edad) {
   if (isNaN(parseInt(edad)) || parseInt(edad) < 1 || parseInt(edad) > 10) {
-        mensaje = "*Campo obligatorio. Ingrese un número entre 1 y 100.";
+        mensaje = "*Ingrese un número entre 1 y 100.";
         document.getElementById("campo_edad").innerHTML = mensaje;
         return false;
   }
@@ -24,7 +24,7 @@ function validarEdad(edad) {
 
 function validarTelefono(tel) {
   if ( isNaN(parseInt(tel)) || tel.length  < 7) { 
-        mensaje = "*Campo obligatorio. Ingrese un número válido." ;
+        mensaje = "*Ingrese un número válido." ;
         document.getElementById("campo_tel").innerHTML = mensaje;
         return false;
   }
@@ -32,7 +32,7 @@ function validarTelefono(tel) {
 
 function validarMail(correo) {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(correo) != Boolean(true)){
-        mensaje = "*Campo obligatorio. Debe ingresar un correo válido.";
+        mensaje = "*Debe ingresar un correo válido.";
         document.getElementById("campo_mail").innerHTML = mensaje;
         return false;
   }

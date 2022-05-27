@@ -1,16 +1,17 @@
 .main-grid-container{
     display: grid;
-    grid-template-columns: 2.5fr 3.5fr;
-    grid-template-rows: .4fr 3.6fr 6fr 4.1fr 1.3fr;    
-    grid-template-areas: "main-header main-header" 
-                         "block21 block22" 
-                         "block3 block3"
-                         "block40 block41"
-                         "footer footer";                   
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 3.6fr 6fr 4.1fr 1.3fr;    
+    grid-template-areas: "main-header main-header main-header" 
+                         "block21 block21 block22" 
+                         "block3 block3 block3"
+                         "block40 block41 block41"
+                         "footer footer footer";                   
     height: 500vh;
-    grid-gap: 1px;
-    background-color: white;
-    /*background: linear-gradient(to bottom, black 50%, gray);*/
+    grid-gap: 1px; /**/
+    background-color: white; /**/
+    color: white;
+
 }
 
 
@@ -23,35 +24,37 @@ body {
 }
 
 .logo-nav-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
 }
 
-nav {
-	  float: right;
-    padding-top: 1.5%;
-    font-family: 'Caveat', cursive;
-    font-size: larger;
-    font-weight: bold;
+
+.navigation {
+  float: right;
+  font-family: 'Caveat', cursive;
+  font-size: larger;
+  font-weight: bold;
 }
 
-	nav ul {
-		margin: 0;
-		padding-right: 20px;
-		list-style: none;
-    list-style-type: none;
-    background-color: transparent;
-	}
-	
-		nav ul li {
-			display: inline-block;
-		}
-			
-			nav ul li a {
-				display: block;
-        color: white;
-				padding: 10px;
-			}
+.navigation ul {
+margin: 0;
+padding-right: 20px;
+list-style: none;
+list-style-type: none;
+background-color: transparent;
+}
+
+ul li {
+display: inline-block;
+}
+    
+ul li a {
+display: block;
+color: white;
+padding: 10px;
+}
+
 
 .p-text {
   padding: 1.5em;
@@ -84,7 +87,9 @@ a:visited {
 h1 { 
   font-family: 'Caveat', cursive;
   font-size: 4em;
+  padding: 1em;
   text-align: center;
+  color: white;
 }
 
 
@@ -126,12 +131,6 @@ div > p {
     grid-area: block41;
 }
 
-footer{
-    grid-area: footer;
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    font-weight: bold;
-}
 
 .item{
     background-color: transparent;
@@ -191,6 +190,20 @@ footer{
   filter: blur(2px);
 }
 
+footer{
+  grid-area: footer;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  background-image: linear-gradient(to top, gray, black);
+}
+
+.block22 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+ } 
+
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* MEDIA QUERIES */
 
@@ -208,13 +221,57 @@ footer{
                            "block41"
                            "footer";
     height: 650vh; 
-    /*background: linear-gradient(to bottom, black 50%, gray)*/
   }
+  .logo-nav-container {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    text-align: center;    
+  }
+
+
 }
  
 
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px){
+  .main-grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: .4fr 4fr 4fr 4fr 4fr 4fr 4fr; 
+      grid-template-areas: "main-header"
+                           "block21" 
+                           "block22"
+                           "block3"
+                           "block40"
+                           "block41"
+                           "footer";
+    height: 650vh; 
+  }
+
+  .logo-nav-container {
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    text-align: center;    
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5.5em;
+  }
+  
+
+}
+
+
+
+
 
 /* for touch screen devices */
+/*
 @media (hover: none) { 
   .location-title {
     opacity: 1;
@@ -222,5 +279,5 @@ footer{
   .location-image img {
     filter: blur(2px);
   }
-}
+}*/
 
