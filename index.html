@@ -24,8 +24,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
-</head>
 
+
+  </head>
+
+<style>
+
+.imag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.block-text-1, .block-text-2 {
+  padding: 2em 3em;
+}
+
+</style>
 
 <body class="main-grid-container">
 
@@ -37,11 +57,10 @@
       <div class="logo-nav-container">
           <div class="logo"> 
               <img src="./images/brujula.jpeg" class="rotate" width="40" height="40"/>     
-              <span class="text-logo">  Experiencia Brújula </span> 
+              <span class="text-logo"> Experiencia Brújula </span> 
           </div>
 
           <!-- nav -->
-      
           <div class = "navigation">
               <ul>
                   <li><a href="index.html">Home</a></li>
@@ -58,8 +77,12 @@
 
     <!-- Texto -->
     <div class="item block21">
-        <div>
-            <h1>¡Viví Experiencia Brújula!</h1>
+      
+      <div class="imag">
+        <img width="100%"  src="./images/panoramica_.jpg">
+      </div>
+      <div>
+        <h1 style="padding-top: 0;">¡Viví Experiencia Brújula!</h1>
         <p class="p-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Adipisci, quibusdam quas nisi amet laborum quisquam neque labore accusantium, 
@@ -72,10 +95,6 @@
       </div>
     </div>
 
-    <!-- Imagen responsiva -->
-    <div class="item block22">      
-      <img style="border-radius: 10px;" src="./images/catarata1.jpg" alt="">  
-    </div>
 
     <div class="item block3">
 
@@ -160,53 +179,48 @@
     </div>
 
     <!-- Opiniones + Imagenes -->
-    <div class="item block40"> 
+    <div class="item block-tittle-gracias"> 
       <h1>
         ¡Gracias por confiar en nosotros!
       </h1>
     </div>
 
-    <div style="padding: 2em 5em;" class="item block41">  
+    <div class="item block-text-1">  
 
-      <!-- <p class = "opinion-1">-->
         <p>
        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-       Debitis adipisci ullam inventore laudantium.
+       Debitis adipisci ullam inventore laudantium. Ezequiel, Córdoba.
       </p>
 
       <br>
-      <!-- <p class = "opinion-2">-->
         <p>
-        Lorem ipsum dolor sit amet consectetur.
+        Lorem ipsum dolor sit amet consectetur. Federico, Córdoba.
       </p>
       <br>
-      <!-- <p class = "opinion-3">-->
         <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Aliquid amet velit, explicabo sit asperiores molestias cum..
+        Aliquid amet velit, explicabo sit asperiores molestias cum. Marcos, Berlín.
       </p>
 
     </div>
   
-    <div style="padding: 2em 5em;" class="item block44">  
+    <div class="item block-text-2">  
 
-      <!-- <p class = "opinion-1">-->
         <p>
        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-       Debitis adipisci ullam inventore laudantium.
+       Debitis adipisci ullam inventore laudantium. Gabriel, Córdoba. 
       </p>
 
       <br>
-      <!-- <p class = "opinion-2">-->
         <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Sit doloremque doloribus adipisci facere.
+        Sit doloremque doloribus adipisci facere. Melina, Santa Fe. 
       </p>
       <br>
-      <!-- <p class = "opinion-3">-->
         <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Aliquid amet velit, explicabo sit asperiores molestias cum..
+        Aliquid amet velit, explicabo sit asperiores molestias cum.
+        Lucía, Resistencia.
       </p>
 
     </div>

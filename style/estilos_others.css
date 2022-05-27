@@ -50,9 +50,8 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em;
-  flex-direction: column;
-  
+  padding: 0em 2em;
+  flex-direction: column; 
 }
 
 img {
@@ -152,7 +151,7 @@ input[type=reset]:hover {
 }
 
 .p-text {
-    padding: 1.5em;
+    padding: 1.5em 3em;
     color: white;
   }
   
@@ -198,7 +197,7 @@ body {
 
 .navigation ul {
   margin: 0;
-  padding-right: 20px;
+  padding-right: 1em;
   list-style: none;
   list-style-type: none;
   background-color: transparent;
@@ -233,6 +232,7 @@ h1 {
   padding: 1em;
   text-align: center;
   color: white;
+  font-weight: bold ;
 }
 
 div > p {
@@ -250,6 +250,9 @@ footer{
     background-image: linear-gradient(to top, gray, black);
 }
 
+.item {
+  padding-top: 1.2em;
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px){

@@ -3,16 +3,16 @@
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1fr 3.6fr 6.2fr 4.1fr 1.4fr;    
     grid-template-areas: "main-header main-header main-header" 
-                         "block21 block21 block22" 
+                         "block21 block21 block21" 
                          "block3 block3 block3"
-                         "block41 block40 block44"
+                         "block-text-1 block-tittle-gracias block-text-2"
                          "footer footer footer";                   
     height: 450vh;
     background-color:black; /**/
     color: white;
 }
-.block44{
-  grid-area: block44;
+.block-text-2{
+  grid-area: block-text-2;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 
 .navigation ul {
 margin: 0;
-padding-right: 20px;
+padding-right: 1em;
 list-style: none;
 list-style-type: none;
 background-color: transparent;
@@ -70,7 +70,7 @@ padding: 10px;
 
 
 .p-text {
-  padding: 1.5em;
+  padding: 1.5em 3em;
 }
 
 i {
@@ -98,11 +98,12 @@ a:visited {
 }
 
 h1 { 
-  font-family: 'Caveat', cursive;
-  font-size: 4em;
-  padding: 1em;
+  font-family: 'Caveat', cursive; 
+  font-size: 4em ;
+  padding: 1em ;
   text-align: center;
   color: white;
+  font-weight: bold ;
 }
 
 
@@ -119,37 +120,26 @@ div > p {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.block22{
-    grid-area: block22;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;  
+    flex-wrap: wrap;
 }
 
 .block3{
     grid-area: block3;
 }
 
-.block40{
-    grid-area: block40;
+.block-tittle-gracias{
+    grid-area: block-tittle-gracias;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.block41{
-    grid-area: block41;
+.block-text-1{
+    grid-area: block-text-1;
 }
 
-
-.item{
-    background-color: transparent;
-    padding: 10px;
-    color: white;
-    background-color: black;
+.item {
+  padding-top: 1.2em;
 }
 
 
@@ -215,26 +205,6 @@ footer{
   padding-top: 2em;
 }
 
-.block22 > img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
- } 
-
- .opinion-1 {
-  text-align: left;
-   width: 60%;
-}
-
-.opinion-2 {
-  text-align: right;
-  margin-left: 6em;
-}
-
-.opinion-3 {
-  text-align: left;
-   width: 75%;
-}
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* MEDIA QUERIES */
@@ -243,15 +213,15 @@ footer{
 @media only screen and (max-width: 768px){
   .main-grid-container{
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: .4fr 4fr 4fr 4fr 4fr 4fr 4fr; 
-      grid-template-areas: "main-header"
-                           "block21" 
-                           "block22"
-                           "block3"
-                           "block40"
-                           "block41"
-                           "footer";
+      grid-template-areas: "main-header main-header"
+                           "block21 block21" 
+                           "block22 block22"
+                           "block3 block3"
+                           "block-tittle-gracias block-tittle-gracias"
+                           "block-text-1 block-text-2"
+                           "footer footer";
     height: 650vh; 
   }
   .logo-nav-container {
@@ -264,19 +234,19 @@ footer{
 
 }
  
-
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (max-width: 768px){
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px){
   .main-grid-container{
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: .4fr 4fr 4fr 4fr 4fr 4fr 4fr; 
+      grid-template-rows: .4fr 4fr 4fr 4fr 4fr 4fr 4fr 4fr; 
       grid-template-areas: "main-header"
                            "block21" 
                            "block22"
                            "block3"
-                           "block40"
-                           "block41"
+                           "block-tittle-gracias"
+                           "block-text-1"
+                           "block-text-2"
                            "footer";
     height: 650vh; 
   }
@@ -297,21 +267,6 @@ footer{
     padding-top: 2em;  
   }
   
-  .opinion-1 {
-    text-align: left;
-     width: 80%;
-  }
-  
-  .opinion-2 {
-    text-align: right;
-    margin-left: 2em;
-  }
-  
-  .opinion-3 {
-    text-align: left;
-     width: 95%;
-  }  
-
 }
 
 
