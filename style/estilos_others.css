@@ -6,7 +6,7 @@
     grid-template-areas: "main-header main-header" 
                          "block1 block2"
                          "footer footer";                   
-    height: 250vh; 
+    height: 200vh; 
     background-color: black;
     color: white;
 }
@@ -64,6 +64,19 @@ img {
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* ESTILOS FILE CONTACTO */
+
+.main-grid-container-contacto{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 4fr 1.5fr;
+  grid-template-areas: "main-header " 
+                       "block1-contacto"
+                       "block2-contacto"
+                       "footer";                   
+  height: 200vh; 
+  background-color: black;
+  color: white;
+}
 
 form {
   display: flex;
@@ -125,7 +138,15 @@ input[type=reset]:hover {
   background-color: red;
 }
 
-.block1-contacto, .block2-contacto {
+.block1-contacto {
+  grid-area: block1-contacto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block2-contacto {
+  grid-area: block2-contacto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,8 +275,10 @@ footer{
   padding-top: 1.2em;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (max-width: 768px){
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px){
      .main-grid-container{
       grid-template-columns: 1fr;
       grid-template-rows: 1.5fr 3fr 3fr 1.5fr; 
@@ -263,7 +286,19 @@ footer{
                            "block2" 
                            "block1"
                            "footer";   
-      height: 250vh;                 
+      height: 175vh;                 
+  }
+
+    .main-grid-container-tips{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1.5fr;
+    grid-template-areas: "main-header " 
+                         "block"
+                         "footer";                   
+    height: 125vh; 
+    background-color: black;
+    color: white;
   }
 
   .logo-nav-container {
@@ -273,25 +308,22 @@ footer{
     text-align: center;    
   }
   
-  .block2-contacto {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-  }
-  
-  form {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    flex-direction: column;
-    padding: 0em 0em;
-    margin: 0em;
- 
+
+  .main-grid-container-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 4fr 1.5fr;
+    grid-template-areas: "main-header " 
+                         "block1-contacto"
+                         "block2-contacto"
+                         "footer";                   
+    height: 125vh; 
+    background-color: black;
+    color: white;
   }
 
 }
 
-/* Small devices (landscape phones, 576px and up) */
 @media only screen and (max-width: 576px){
   .main-grid-container{
     grid-template-columns: 1fr;
@@ -321,6 +353,7 @@ footer{
   flex-direction: column;
   text-align: center;    
 }
+
 
 .footer {
   display: flex;
